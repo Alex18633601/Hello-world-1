@@ -1,0 +1,44 @@
+@import url('https://fonts.googleapis.com/css2?family=Sour+Gummy:ital,wght@0,100..900;1,100..900&display=swap');
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: linear-gradient(to bottom, #76bbc7, #4caf50);
+    overflow: hidden;
+}
+
+#Hello-world {
+    margin-top: -30%;
+    font-family:Sour Gummy, sans-serif;
+    font-size: 48px;
+    color: #eddb18;
+    margin-bottom: 20px;
+    filter: drop-shadow(2px 2px 2px black);
+    transition: 0.7s ease;
+}
+#Hello-world:hover{
+    transform: scale(1.1);
+  }
+
+#mir-image {
+    position: absolute;
+    filter: drop-shadow(0 0 5px rgb(56, 55, 55));
+    width: 300px;
+    height: 300px;
+    cursor: pointer;
+}
+.rotate {
+    animation: rotation 30s infinite linear;
+
+}
+@keyframes rotation{
+    from{
+        transform: rotate(0deg);
+    }
+    to{
+        transform: rotate(359deg);
+    }
+}
